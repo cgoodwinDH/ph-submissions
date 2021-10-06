@@ -1,0 +1,312 @@
+block in append_cflags: checking for whether -std=c99 is accepted as CFLAGS... -------------------- yes
+
+"cc -o conftest -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC conftest.c  -L. -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib     -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+"cc -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC  -std=c99 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -Wno-declaration-after-statement is accepted as CFLAGS... -------------------- yes
+
+"cc -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99  -Wno-declaration-after-statement -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -g is accepted as CFLAGS... -------------------- yes
+
+"cc -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 -Wno-declaration-after-statement  -g -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -Winline is accepted as CFLAGS... -------------------- yes
+
+"cc -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 -Wno-declaration-after-statement -g  -Winline -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -Wmissing-noreturn is accepted as CFLAGS... -------------------- yes
+
+"cc -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 -Wno-declaration-after-statement -g -Winline  -Wmissing-noreturn -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+have_library: checking for gzdopen() in -lz... -------------------- no
+
+"cc -o conftest -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 -Wno-declaration-after-statement -g -Winline -Wmissing-noreturn conftest.c  -L. -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib     -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -lruby -lz  -lm   -lc"
+conftest.c:3:10: fatal error: zlib.h: No such file or directory
+    3 | #include <zlib.h>
+      |          ^~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <zlib.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))gzdopen; return !p; }
+/* end */
+
+"cc -o conftest -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 -Wno-declaration-after-statement -g -Winline -Wmissing-noreturn conftest.c  -L. -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib     -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -lruby -lz  -lm   -lc"
+conftest.c:3:10: fatal error: zlib.h: No such file or directory
+    3 | #include <zlib.h>
+      |          ^~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <zlib.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: extern void gzdopen();
+17: int t(void) { gzdopen(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for gzdopen() in -llibz... -------------------- no
+
+"cc -o conftest -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 -Wno-declaration-after-statement -g -Winline -Wmissing-noreturn conftest.c  -L. -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib     -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -lruby -llibz  -lm   -lc"
+conftest.c:3:10: fatal error: zlib.h: No such file or directory
+    3 | #include <zlib.h>
+      |          ^~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <zlib.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))gzdopen; return !p; }
+/* end */
+
+"cc -o conftest -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 -Wno-declaration-after-statement -g -Winline -Wmissing-noreturn conftest.c  -L. -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib     -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -lruby -llibz  -lm   -lc"
+conftest.c:3:10: fatal error: zlib.h: No such file or directory
+    3 | #include <zlib.h>
+      |          ^~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <zlib.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: extern void gzdopen();
+17: int t(void) { gzdopen(); return 0; }
+/* end */
+
+--------------------
+
+try_package_configuration: checking for zlib using `pkg_config`... -------------------- no
+
+"pkg-config --exists zlib"
+package configuration for zlib is not found
+--------------------
+
+have_library: checking for gzdopen() in -lz... -------------------- no
+
+"cc -o conftest -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 -Wno-declaration-after-statement -g -Winline -Wmissing-noreturn conftest.c  -L. -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib     -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -lruby -lz  -lm   -lc"
+conftest.c:3:10: fatal error: zlib.h: No such file or directory
+    3 | #include <zlib.h>
+      |          ^~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <zlib.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))gzdopen; return !p; }
+/* end */
+
+"cc -o conftest -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 -Wno-declaration-after-statement -g -Winline -Wmissing-noreturn conftest.c  -L. -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib     -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -lruby -lz  -lm   -lc"
+conftest.c:3:10: fatal error: zlib.h: No such file or directory
+    3 | #include <zlib.h>
+      |          ^~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <zlib.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: extern void gzdopen();
+17: int t(void) { gzdopen(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for gzdopen() in -llibz... -------------------- no
+
+"cc -o conftest -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 -Wno-declaration-after-statement -g -Winline -Wmissing-noreturn conftest.c  -L. -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib     -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -lruby -llibz  -lm   -lc"
+conftest.c:3:10: fatal error: zlib.h: No such file or directory
+    3 | #include <zlib.h>
+      |          ^~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <zlib.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))gzdopen; return !p; }
+/* end */
+
+"cc -o conftest -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/include/ruby-3.0.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 -Wno-declaration-after-statement -g -Winline -Wmissing-noreturn conftest.c  -L. -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib     -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -L/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib -lruby -llibz  -lm   -lc"
+conftest.c:3:10: fatal error: zlib.h: No such file or directory
+    3 | #include <zlib.h>
+      |          ^~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <zlib.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: extern void gzdopen();
+17: int t(void) { gzdopen(); return 0; }
+/* end */
+
+--------------------
+

@@ -1,0 +1,79 @@
+current directory: /home/hawc/ph-submissions/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.12.5/ext/nokogiri
+/home/linuxbrew/.linuxbrew/opt/ruby/bin/ruby -I /home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/lib/ruby/3.0.0 -r ./siteconf20211006-49182-wh0fja.rb extconf.rb --use-system-libraries --with-xml2-include\=/usr/local/opt/libxml2/include/libxml2
+checking for whether -std=c99 is accepted as CFLAGS... yes
+checking for whether -Wno-declaration-after-statement is accepted as CFLAGS... yes
+checking for whether -g is accepted as CFLAGS... yes
+checking for whether -Winline is accepted as CFLAGS... yes
+checking for whether -Wmissing-noreturn is accepted as CFLAGS... yes
+Building nokogiri using system libraries.
+checking for gzdopen() in -lz... no
+checking for gzdopen() in -llibz... no
+checking for zlib using `pkg_config`... no
+Please install either the `pkg-config` utility or the `pkg-config` rubygem.
+checking for gzdopen() in -lz... no
+checking for gzdopen() in -llibz... no
+-----
+extconf.rb:272:in `ensure_package_configuration'
+z is missing. Please locate mkmf.log to investigate how it is failing.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/home/linuxbrew/.linuxbrew/Cellar/ruby/3.0.2/bin/$(RUBY_BASE_NAME)
+	--help
+	--clean
+	--prevent-strip
+	--enable-system-libraries
+	--disable-system-libraries
+	--use-system-libraries
+	--enable-system-libraries
+	--disable-system-libraries
+	--use-system-libraries
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--with-z-dir
+	--without-z-dir
+	--with-z-include
+	--without-z-include=${z-dir}/include
+	--with-z-lib
+	--without-z-lib=${z-dir}/lib
+	--with-zlib
+	--without-zlib
+	--with-libz-dir
+	--without-libz-dir
+	--with-libz-include
+	--without-libz-include=${libz-dir}/include
+	--with-libz-lib
+	--without-libz-lib=${libz-dir}/lib
+	--with-libzlib
+	--without-libzlib
+	--with-zlib-config
+	--without-zlib-config
+	--with-pkg-config
+	--without-pkg-config
+	--with-zlib
+	--without-zlib
+	--with-libzlib
+	--without-libzlib
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/hawc/ph-submissions/vendor/bundle/ruby/3.0.0/extensions/x86_64-linux/3.0.0/nokogiri-1.12.5/mkmf.log
+
+extconf failed, exit code 1
